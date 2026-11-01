@@ -359,7 +359,7 @@ footer p{max-width:110ch;line-height:1.6}
         </div>
         <form class="router" id="router" action="https://formsubmit.co/aj.lash@goyaldecoster.com" method="POST">
           <input type="hidden" name="_subject" id="f-subject" value="Red Rock Holdings website inquiry">
-          <input type="hidden" name="_cc" id="f-cc" value="freddy@goyaldecoster.com">
+          <input type="hidden" name="_cc" id="f-cc" value="info@redrockholdingsusa.com,freddy@goyaldecoster.com,raj@goyaldecoster.com">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="https://redrockholdingsusa.com/#contact">
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
@@ -505,7 +505,7 @@ footer p{max-width:110ch;line-height:1.6}
   function updateRoute(){
     var id=sel.value,c=byId[id];
     var ticked=[].slice.call(also.querySelectorAll("input:checked")).map(function(i){return i.value}).filter(function(x){return x!==id});
-    var cc={"freddy@goyaldecoster.com":1};
+    var cc={"info@redrockholdingsusa.com":1,"freddy@goyaldecoster.com":1,"raj@goyaldecoster.com":1};
     if(c)cc[c.route]=1;
     ticked.forEach(function(t){cc[byId[t].route]=1});
     document.getElementById("f-cc").value=Object.keys(cc).join(",");
